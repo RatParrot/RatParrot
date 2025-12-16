@@ -105,8 +105,9 @@ button:hover {
 
 }
 
-.left {
-    padding: auto 10px;;
+.title { 
+    line-height: 28px;
+}
 .right {
     font-family: VT323, monospace;
     font-size: large;
