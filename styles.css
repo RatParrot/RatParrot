@@ -104,6 +104,9 @@ button:hover {
 .left, .right {
 
 }
+
+.left {
+    padding: auto 10px;;
 .right {
     font-family: VT323, monospace;
     font-size: large;
