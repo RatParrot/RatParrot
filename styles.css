@@ -10,6 +10,25 @@
     z-index: 1000;
 }
 
+
+.mascotSit:hover {
+    width: 160px;
+    height: auto;
+    position: fixed;
+    bottom: 5px;
+    right: -5px;
+
+}
+
+.mascotSit {
+    width: 160px;
+    height: auto;
+    position: fixed;
+    bottom:-50px;
+    right: -20px;
+
+}
+
 .mascotBig {
     width: 400px;
     height: auto;
@@ -105,17 +124,35 @@ button:hover {
 
 }
 
+.left {
+
+}
+
 .title { 
     line-height: 28px;
+  background: linear-gradient(90deg, red, brown, orange, orange);
+  -webkit-background-clip: text;
+  color: transparent;
 }
+
 .right {
     font-family: VT323, monospace;
-    font-size: large;
+    font-size: 15px;
     padding: 10px;
+    background-color: #c9c1a7;
 }
+
+a:hover {
+    color: purple;
+    font-size: large;
+
+}
+
 .seperator {
     width: 3px;
     background-color: black;
+    margin-left:auto;
+    margin-right: 1px;
 }
 
 .newTopics {
