@@ -28,6 +28,7 @@
     right: -20px;
 
 }
+
 .img404 {
 
 
@@ -37,10 +38,13 @@
     font-size: 100px;
     margin-left: 50px;
 }
+
 .mascotBig {
     width: 400px;
     height: auto;
     position: auto;
+    background: transparent;
+    
 }
 
 .mascotAbout:hover {
