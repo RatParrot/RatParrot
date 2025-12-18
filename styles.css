@@ -1,5 +1,44 @@
+/* SNOW ON BY DEFAULT */
+.snow {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    image-rendering: pixelated;
+    display: block;
 
+    background-image:
+        radial-gradient(white 4px, transparent 4px),
+        radial-gradient(white 3px, transparent 3px),
+        radial-gradient(white 5px, transparent 5px);
 
+    background-size:
+        200px 200px,
+        250px 250px,
+        300px 300px;
+
+    background-position:
+        15% -20px,
+        35% -40px,
+        80% -10px;
+
+    animation: snow 22s linear infinite;
+}
+
+@keyframes snow {
+    from {
+        background-position:
+            15% -20px,
+            35% -40px,
+            80% -10px;
+    }
+    to {
+        background-position:
+            15% 100vh,
+            35% 100vh,
+            80% 100vh;
+    }
+}
 
 .mascot {
     width: 200px;
@@ -136,13 +175,6 @@ button:hover {
     min-height: 100vh;
 }
 
-.left, .right {
-
-}
-
-.left {
-
-}
 
 .title { 
     line-height: 28px;
@@ -179,4 +211,96 @@ a:hover {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     text-decoration:  peru;
+}
+
+/* bottom-left toggle button */
+.snowButton {
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 9999;
+    color: white;       /* visible on dark backgrounds */
+    user-select: none;
+    background: none;   /* no ugly box */
+    padding: 0;         /* no spacing */
+    border: none;       /* no border */
+}
+
+/* snow ON by default */
+.snow {
+    display: block;
+}
+
+/* clicking ❄ turns snow OFF */
+#snowToggle:checked ~ .snow {
+    display: none;
+}
+
+/* SHARED LIGHT STRIP STYLE */
+.lightsTop,
+.lightsBottom {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 24px;              /* enough space for full bulbs */
+    pointer-events: none;      /* never blocks clicks */
+    z-index: 9998;
+    background-repeat: repeat-x;
+    background-size: 120px 24px;
+
+    background-image:
+        radial-gradient(circle, red 6px, transparent 7px),
+        radial-gradient(circle, yellow 6px, transparent 7px),
+        radial-gradient(circle, green 6px, transparent 7px),
+        radial-gradient(circle, blue 6px, transparent 7px);
+
+    background-position:
+        10px 12px,
+        40px 12px,
+        70px 12px,
+        100px 12px;
+
+    animation: lightsBlink 1.5s infinite alternate;
+}
+
+/* TOP STRIP — FLIPPED */
+
+.lightsTop {
+    top: 0;
+    transform: scaleY(-1) translateY(-24px);
+    transform-origin: top;
+}
+
+/* BOTTOM STRIP — NORMAL */
+.lightsBottom {
+    bottom: 0;
+}
+
+@keyframes lightsBlink {
+    0% { filter: brightness(0.7); }
+    100% { filter: brightness(1.4); }
+}
+
+.holidayBadge {
+    top: 65px;      /* bottom-left corner */
+    right: 190px;
+    padding: 8px 14px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    color: #fff;
+    background: rgba(0,0,0,0.35); /* subtle, not ugly */
+    border: 2px solid #fff;
+    border-radius: 6px;
+    text-shadow: 0 0 6px #fff;
+    box-shadow: 0 0 10px rgba(255,255,255,0.4);
+    z-index: 9999;
+    pointer-events: none; /* NEVER blocks clicks */
+    animation: holidayGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes holidayGlow {
+    0% { box-shadow: 0 0 6px rgba(255,255,255,0.3); }
+    100% { box-shadow: 0 0 14px rgba(255,255,255,0.8); }
 }
