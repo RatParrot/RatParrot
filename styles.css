@@ -223,7 +223,7 @@ a {
 
 .InfoLicenseBg {
     background-color: aquamarine;
-    outline;
+
     color: darkorange;
     font-style: oblique;
     text-decoration: underline;
@@ -293,6 +293,7 @@ a:hover {
 }
 
 .newTopics {
+    position: fixed;
     line-height: 3px;
     list-style: none;
     margin-right: 10px;
