@@ -68,9 +68,9 @@
 
 }
 
-.img404 {
-
-
+.mascotContact {
+    height: 160px;
+    width: auto;
 }
 
 .Title404 {
@@ -181,6 +181,7 @@ button:hover {
   background: linear-gradient(90deg, red, brown, orange, orange);
   -webkit-background-clip: text;
   color: transparent;
+
 }
 
 .right {
@@ -188,6 +189,93 @@ button:hover {
     font-size: 15px;
     padding: 10px;
     background-color: #c9c1a7;
+    outline: auto;
+    outline-color: black;
+}
+
+a {
+    
+}
+
+.Links-RatParrot:hover {
+
+
+}
+
+.Media-RatParrot img:hover {
+    height: 100px;
+
+}
+.Media-RatParrot {
+
+}
+
+/* show the targeted box */
+.Media-RatParrot:target {
+
+}
+
+.Links-RatParrot {
+    animation: rainbow 10s infinite linear;
+
+}
+
+.InfoLicenseBg {
+    background-color: aquamarine;
+    outline;
+    color: darkorange;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.RatParrotDescription {
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+    margin: 1px;
+    font-size: 17px;
+
+}
+
+.AuthorInfo {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+@keyframes rainbow {
+    0% { filter: hue-rotate(0deg);}
+    100% { filter: hue-rotate(360deg);}
+}
+.rp-title {
+    font-size: 15px;
+    background-color: pink;
+    width: auto;
+    height: 50px;
+    padding-top: 1px;
+    outline-color: blue;
+    outline: auto;
+    padding-left: 10px;
+}
+
+.Media-RatParrot img {
+    height: 80px;
+    width: auto;
+    outline: auto;
+    outline-style: ridge;
+}
+
+.rp-title:hover {
+
+}
+/* If you want to make any changes on one speicifc article make a new class called Main/Hierachy but with a unique ID to that site, example: Main-RatParrot/ or Main-RatParrot#001/---*/
+/* This is the "Main" Site of each Article! It stays universal, if this code changes once, it changes everywhere!*/
+.Main {
+
+}
+
+/*This is the Hierachy of each site, any changes made will affect all Articles!"*/
+
+.hierachy {
+
 }
 
 a:hover {
@@ -198,13 +286,15 @@ a:hover {
 
 .seperator {
     width: 3px;
-    background-color: black;
+    position: static;
     margin-left:auto;
     margin-right: 1px;
 }
 
 .newTopics {
     line-height: 3px;
+    list-style: none;
+    margin-right: 10px;
 }
 
 .mail {
