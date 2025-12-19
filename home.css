@@ -1,0 +1,92 @@
+body {
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(43, 53, 65, 0.384);
+    background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'>\
+<rect width='1' height='1' fill='%23bfbfbf'/>\
+<rect x='3' y='2' width='1' height='1' fill='%23d9d9d9'/>\
+<rect x='1' y='4' width='1' height='1' fill='%23c7c7c7'/>\
+</svg>");
+    background-size: 6px 6px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: small;
+    line-height: 15px;
+}
+
+.site-header {
+    border: solid black;
+    border-radius: 6px;
+    background-color: rgb(207, 168, 168);
+    padding-left: 10px;
+    padding-top: 10px;
+    max-width: 500px;
+    height: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.feed {
+    background-color:#e0e0e0d8;;
+    border: solid black;
+    margin-top: 10px;
+    margin-left: 5px;
+    max-width: 500px;
+    padding-left: 5px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.feed-intro {
+    color: red;
+    animation: rainbow 5s linear infinite;
+}
+
+.feed-posts {
+    font-family:cursive;
+    font-size: 15px;
+    padding-right: 20px;
+    animation: rainbow 20s linear infinite;
+    color: darkblue;
+}
+
+
+
+@keyframes rainbow {
+    0% { filter: hue-rotate(0deg);}
+    100% { filter: hue-rotate(360deg);}
+}
+
+
+.Icon-RatParrot {
+    height: 100px;
+    width: auto;
+    position: absolute;
+    left: 10px;
+}
+
+.Icon-RatParrotSit {
+    width: 160px;
+    height: auto;
+    position: fixed;
+    bottom:-50px;
+    right: -20px;
+}
+
+.Icon-RatParrotSit:hover {
+    width: 160px;
+    height: auto;
+    position: fixed;
+    bottom: 5px;
+    right: -5px;
+
+}
+
+.Icon-RatParrotSit::after {
+    width: 160px;
+    height: auto;
+    position: fixed;
+    bottom:-50px;
+    right: -20px;
+}

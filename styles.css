@@ -59,6 +59,14 @@
 
 }
 
+.mascotSit::after {
+    width: 160px;
+    height: auto;
+    position: fixed;
+    bottom:-50px;
+    right: -20px;
+}
+
 .mascotSit {
     width: 160px;
     height: auto;
@@ -97,6 +105,16 @@
     left: 10px;
     z-index: 1000;
 }
+
+.mascotAbout::after {
+    width: 250px;
+    height: auto;
+    position: fixed;
+    bottom: -20px;
+    left: 10px;
+    z-index: 1000;
+}
+
 
 body {
     background-color:lightgrey;
