@@ -421,3 +421,11 @@ a:hover {
     0% { box-shadow: 0 0 6px rgba(255,255,255,0.3); }
     100% { box-shadow: 0 0 14px rgba(255,255,255,0.8); }
 }
+
+
+.HomepageLink a {
+    text-decoration: none;
+    animation: rainbow 1.5s infinite linear;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
