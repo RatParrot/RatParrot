@@ -299,6 +299,7 @@ a:hover {
     line-height: 3px;
     list-style: none;
     margin-right: 10px;
+    font-size: 12px;
 }
 
 .newTopics:hover {
