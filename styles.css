@@ -141,8 +141,10 @@ button:hover {
     font-size: 12px;
     line-height: 20px;
     margin-left: 5px;
+
 }
- 
+
+
 .Items::-webkit-scrollbar {
     width: 12px;
 }
@@ -293,12 +295,16 @@ a:hover {
 }
 
 .newTopics {
-    position: fixed;
+    position: auto;
     line-height: 3px;
     list-style: none;
     margin-right: 10px;
 }
 
+.newTopics:hover {
+    font-size: 10px;
+
+}
 .mail {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
