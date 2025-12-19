@@ -295,7 +295,7 @@ a:hover {
 }
 
 .newTopics {
-    position: auto;
+    position: absolute;
     line-height: 3px;
     list-style: none;
     margin-right: 10px;
