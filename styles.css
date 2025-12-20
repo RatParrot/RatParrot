@@ -25,6 +25,7 @@
     animation: snow 22s linear infinite;
 }
 
+
 @keyframes snow {
     from {
         background-position:
@@ -84,6 +85,7 @@
 .Title404 {
     font-size: 100px;
     margin-left: 50px;
+    line-height: 100px;
 }
 
 .mascotBig {
