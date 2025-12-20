@@ -238,12 +238,12 @@ window.addEventListener("load", () => {
   function startGame() {
     resetGame();
     draw();
+    loop();
   }
 
   function flap() {
     if (!gameStarted) {
       gameStarted = true;
-      loop();
     }
     if (alive) {
       rat.vel = JUMP;
