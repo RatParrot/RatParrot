@@ -320,6 +320,11 @@ a:hover {
     font-size: 12px;
 }
 
+.games {
+    margin-top: 40px;
+    list-style: none;
+}
+
 .newTopics:hover {
     font-size: 10px;
 

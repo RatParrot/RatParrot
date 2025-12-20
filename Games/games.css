@@ -1,0 +1,91 @@
+body {
+    background-color: azure;
+    background-image: url("data:image/svg+xml;utf8,\
+    <svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'>\
+    <rect width='1' height='1' fill='%23bfbfbf'/>\
+    <rect x='3' y='2' width='1' height='1' fill='%23d9d9d9'/>\
+    <rect x='1' y='4' width='1' height='1' fill='%23c7c7c7'/>\
+    </svg>");
+    background-size: 2px 2px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    color: #001aff;
+}
+
+.ratwingup {
+    height: 100px;
+    animation: spin 5s linear infinite;
+    transform-style: preserve-3d;
+
+}
+
+.ratwingup:hover {
+    background-color: rgba(195, 255, 237, 0.637);
+    animation: none;
+}
+
+.games {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    line-height: 10px;
+    padding-top: 10px;
+    margin-top: 290px ;
+}
+
+@keyframes spin {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+.RatUpImg {
+    margin-left: 10px;
+    height: 100px;
+    width: 120px;
+    border: dotted blue;
+}
+
+.RatUpImg:hover {
+    border-style: dashed;
+    border-color: aqua;
+}
+
+.flapname {
+    animation: font linear 3s infinite;
+    font-size: 23px;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+@keyframes font {
+  0%   { color: #4da3ff; }  
+  25%  { color: #6f7bff; } 
+  50%  { color: #a066ff; }  
+  75%  { color: #6f7bff; }   
+  100% { color: #4da3ff; }   
+}
+
+a:hover {
+    animation: font linear 3s infinite;
+}
+
+.relatedLinks {
+    color: #6a20e0;
+    animation: none;
+}
+
+.links {
+    animation: rainbow 2s linear infinite;
+    line-height: 15px;
+    margin-top: -25px;
+    margin-bottom: 55px;
+}
+
+@keyframes rainbow {
+    from { filter: hue-rotate(0deg); }
+    to { filter: hue-rotate(360deg); }
+}
+
+.title {
+    padding-left: 10px;
+    padding-top: 10px;
+    text-decoration: underline;
+}
