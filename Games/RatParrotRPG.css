@@ -1,0 +1,34 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', monospace;
+}
+
+a {
+    color: white;   
+}
+
+#terminal {
+    color: white;
+    font-family: 'VT323', monospace;
+    padding: 20px;
+    height: 400px;
+    white-space: pre-wrap;
+    overflow-y: hidden;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+#terminal-input {
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font-family: 'VT323', monospace;
+    font-size: 34px;        
+    padding-left: 15px;
+    width: 700px;
+
+    caret-color: white; 
+}

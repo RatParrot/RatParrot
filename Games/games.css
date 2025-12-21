@@ -100,3 +100,28 @@ a:hover {
     padding-top: 10px;
     text-decoration: underline;
 }
+
+.TerminalImg {
+    margin-left: 10px;
+    height: 100px;
+    width: 120px;
+    border: dotted blue;
+}
+
+.TerminalImg:hover {
+    border-style: dashed;
+    border-color: aqua;
+}
+
+.TerminalRPG {
+    height: 100px;
+    width: 110px;
+    padding-left: 9px;
+    animation: spin 5s linear infinite;
+    transform-style: preserve-3d;
+}
+
+.TerminalRPG:hover {
+    background-color: rgba(195, 255, 237, 0.637);
+    animation: none;
+}
