@@ -40,7 +40,8 @@ body {
     font-size: 20px;
     line-height: 10px;
     padding-top: 10px;
-    margin-top: 290px ;
+    margin-top: 200px ;
+    display: flex;
 }
 
 @keyframes spin {
@@ -81,13 +82,25 @@ a:hover {
 .relatedLinks {
     color: #6a20e0;
     animation: none;
+    margin-top: 45px;
 }
 
 .links {
     animation: rainbow 2s linear infinite;
     line-height: 15px;
-    margin-top: -25px;
+    margin-top: -15px;
     margin-bottom: 55px;
+}
+
+.ancientname {
+
+    animation: font linear 3s infinite;
+    font-size: 23px;
+    margin-left: -9px;
+    margin-top: -10px;
+    white-space: nowrap;
+
+
 }
 
 @keyframes rainbow {
@@ -108,6 +121,20 @@ a:hover {
     border: dotted blue;
 }
 
+.AncientIMG {
+    height: 100px;
+    width: 110px;
+    padding-left: 9px;
+    animation: spin 5s linear infinite;
+    transform-style: preserve-3d;
+}
+
+.AncientIMG:hover {
+    background-color: rgba(195, 255, 237, 0.637);
+    animation: none;
+
+}
+
 .TerminalImg:hover {
     border-style: dashed;
     border-color: aqua;
@@ -125,3 +152,4 @@ a:hover {
     background-color: rgba(195, 255, 237, 0.637);
     animation: none;
 }
+
