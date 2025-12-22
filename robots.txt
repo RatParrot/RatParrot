@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ratparrot.github.io/RatParrot/sitemap.xml
