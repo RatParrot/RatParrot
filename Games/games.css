@@ -119,6 +119,12 @@ a:hover {
     width: 120px;
     border: dotted blue;
 }
+.AncientImg {
+    margin-left: 10px;
+    height: 100px;
+    width: 120px;
+    border: dotted blue;
+}
 
 .AncientIMG {
     height: 100px;
