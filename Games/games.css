@@ -126,6 +126,11 @@ a:hover {
     border: dotted blue;
 }
 
+.AncientImg:hover {
+    border-style: dashed;
+    border-color: aqua;
+}
+
 .AncientIMG {
     height: 100px;
     width: 110px;
